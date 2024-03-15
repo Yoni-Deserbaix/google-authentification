@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --background: hsl(0, 0%, 100%);
-    }
-    .dark {
-        --background: hsl(251, 95%, 5%);
-    }
+  :root {
+    --background: 0, 0%, 100%;
+  }
+  .dark {
+    --background: 251, 95%, 5%;
+  }
 }
