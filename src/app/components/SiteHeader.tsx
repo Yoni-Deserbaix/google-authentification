@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 
 export default function SiteHeader() {
   return (
@@ -11,7 +12,7 @@ export default function SiteHeader() {
         <p>About</p>
         <p>Services</p>
         <p>Vision</p>
-        <p>ThemeToggle</p>
+        <ThemeToggle />
       </div>
     </header>
   );
