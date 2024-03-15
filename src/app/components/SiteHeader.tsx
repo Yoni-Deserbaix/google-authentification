@@ -1,3 +1,3 @@
-export default function SiteFooter() {
-  return <div>SiteFooter</div>;
+export default function SiteHeader() {
+  return <div>SiteHeader</div>;
 }
