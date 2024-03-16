@@ -26,7 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SiteHeader />
-          <div className="flex-1 bg-blue-200">{children}</div>
+          <div className="flex-1">{children}</div>
           <SiteFooter />
         </ThemeProvider>
       </body>
