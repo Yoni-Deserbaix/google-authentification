@@ -18,8 +18,8 @@ export default function SiteHeader() {
       </form>
       <div className="flex gap-4">
         <Link href="/about">About</Link>
-        <Link href="/">Services</Link>
-        <Link href="/">Vision</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/vision">Vision</Link>
         <ThemeToggle />
       </div>
     </header>
