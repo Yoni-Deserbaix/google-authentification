@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
-import Providers from "./components/Providers";
+import ThemeProvider from "./components/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,12 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen bg-background dark">
-        <Providers>{children}</Providers>
-        <SiteHeader />
-        <div className="flex-1 bg-blue-200">{children}</div>
-        <SiteFooter />
-        <Providers>{children}</Providers>
+      <body className="flex flex-col h-screen bg-background light">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SiteHeader />
+          <div className="flex-1 bg-blue-200">{children}</div>
+          <SiteFooter />
+        </ThemeProvider>
       </body>
     </html>
   );
