@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
+import Link from "next/link";
 
 export default function SiteHeader() {
   return (
@@ -16,9 +17,9 @@ export default function SiteHeader() {
         />
       </form>
       <div className="flex gap-4">
-        <p>About</p>
-        <p>Services</p>
-        <p>Vision</p>
+        <Link href="/about">About</Link>
+        <Link href="/">Services</Link>
+        <Link href="/">Vision</Link>
         <ThemeToggle />
       </div>
     </header>

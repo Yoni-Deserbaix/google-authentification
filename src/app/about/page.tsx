@@ -1,4 +1,4 @@
-export default function Page() {
+export default function page() {
   return (
     <main className="mx-auto max-w-6xl px-6">
       <div className="px-10 pt-10">
