@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SiteHeader from "./components/SiteHeader";
-import SiteFooter from "./components/SiteFooter";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import {ThemeProvider} from "./components/ThemeProvider";
-import SiteBlob from "./components/SiteBlob";
+import Blob from "./components/Blob";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -26,10 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SiteHeader />
-          <SiteBlob />
+          <Header />
+          <Blob />
           <div className="flex-1">{children}</div>
-          <SiteFooter />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
