@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ThemeToggle from "./ThemeToggle";
 import Link from "next/link";
+import { ModeToggle } from "./Toggle";
 
 export default function SiteHeader() {
   return (
@@ -20,7 +20,7 @@ export default function SiteHeader() {
         <Link href="/about">About</Link>
         <Link href="/services">Services</Link>
         <Link href="/vision">Vision</Link>
-        toggle button
+        <ModeToggle />
       </div>
     </header>
   );
