@@ -21,7 +21,7 @@ export default function ThemeToggle() {
             alt="moon icon"
             width={20}
             height={20}
-            className="w-6 h-6 transition-all"
+            className="w-6 h-6"
           />
         ) : (
           <Image
@@ -29,7 +29,7 @@ export default function ThemeToggle() {
             alt="sun icon"
             width={20}
             height={20}
-            className="w-6 h-6 transition-all"
+            className="w-6 h-6"
           />
         )}
       </button>

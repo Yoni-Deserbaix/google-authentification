@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen bg-background light">
+      <body className="flex flex-col h-screen bg-background">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
