@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
 import ThemeProvider from "./components/Provider";
+import SiteBlob from "./components/SiteBlob";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SiteHeader />
+          <SiteBlob />
           <div className="flex-1">{children}</div>
           <SiteFooter />
         </ThemeProvider>
