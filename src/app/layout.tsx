@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen bg-background">
+      <body
+        className={`flex flex-col h-screen bg-background ${inter.className}`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -13,7 +13,7 @@ export default function SiteFooter() {
   };
 
   return (
-    <footer className="border-t bg-background">
+    <footer className="border-t border-gray-700 bg-background">
       <div className="mx-auto max-w-7xl overflow-hidden px-4 py-10 sm:py-16 lg:px-6">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
           {siteFooterLinks.footer.map((item) => (
@@ -22,7 +22,7 @@ export default function SiteFooter() {
             </div>
           ))}
         </nav>
-        <p className="mt-10 block text-center text-xs leading-5">
+        <p className="mt-10 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Yoni Deserbaix
         </p>
       </div>
