@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -15,9 +16,21 @@ export default function ThemeToggle() {
         }}
       >
         {theme === "light" ? (
-          <FiMoon className="w-6 h-6 transition-all" />
+          <Image
+            src="./moon.svg"
+            alt="moon icon"
+            width={20}
+            height={20}
+            className="w-6 h-6 transition-all"
+          />
         ) : (
-          <FiSun className="w-6 h-6 transition-all" />
+          <Image
+            src="./sun.svg"
+            alt="sun icon"
+            width={20}
+            height={20}
+            className="w-6 h-6 transition-all"
+          />
         )}
       </button>
     </div>
