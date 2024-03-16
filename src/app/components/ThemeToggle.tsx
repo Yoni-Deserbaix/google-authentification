@@ -4,6 +4,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  console.log("Current theme value is " + theme);
 
   return (
     <div>
@@ -14,7 +15,11 @@ export default function ThemeToggle() {
           console.log(theme);
         }}
       >
-        {theme === "light" ? <FiMoon /> : <FiSun />}
+        {theme === "light" ? (
+          <FiMoon className="w-6 h-6 transition-all" />
+        ) : (
+          <FiSun className="w-6 h-6 transition-all" />
+        )}
       </button>
     </div>
   );
