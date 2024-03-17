@@ -5,8 +5,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/Header/ThemeProvider";
 import Blob from "./components/Blob";
-import { SessionProvider } from "next-auth/react";
-import SignInButton from "./components/SigninButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,19 +24,17 @@ export default function RootLayout({
         className={`flex flex-col h-screen bg-background ${inter.className}`}
       >
         {/* <SessionProvider> */}
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            <Blob />
-            <div className="flex-1">{children}</div>
-            <Footer />
-          </ThemeProvider>
-          <SignInButton />
-        {/* </SessionProvider> */}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <Blob />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
