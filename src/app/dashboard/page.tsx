@@ -21,11 +21,18 @@ const Dashboard = () => {
           </h1>
           {session?.user && (
             <>
-              <p className="py-4 text-xl">Welcome : {session?.user?.name}</p>
-              <p className="py-2 text-xl">Email : {session?.user?.email}</p>
-              <p className="py-2 text-xl">Img URL : {session?.user?.image}</p>
-              <p className="py-2 text-xl">Expires : {session?.expires}</p>
-              <Confetti run={true} recycle={false} />
+            <div className="grid place-items-center">
+              <p className="py-4 text-2xl font-bold">
+                Connected !
+              </p>
+              <p className="py-2 text-xl">
+                Hey<i className="font-bold"> <u>{session?.user?.name} 👋</u></i>
+              </p>
+              <p className="py-2 text-xl font-semibold">Email : {session?.user?.email}</p>
+              <p className="py-2 text-xl text-green-400 font-semibold">
+                Your email is verified.
+              </p>
+              <Confetti run={true} recycle={false} /></div>
             </>
           )}
         </div>
