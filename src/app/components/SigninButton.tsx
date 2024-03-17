@@ -69,9 +69,9 @@ export default function SignInButton() {
                 )}
                 <div>
                   <p className="font-medium ">
-                    {session.user.name || "User name"}
+                    {session.user?.name || "User name"}
                   </p>
-                  <p className="">{session.user.email}</p>
+                  <p className="">{session.user?.email}</p>
                 </div>
               </div>
               <Menu.Item>
