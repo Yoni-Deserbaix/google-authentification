@@ -1,7 +1,7 @@
 export default function SiteBlob() {
-    return (
-      <>
-        {/* <div
+  return (
+    <>
+      <div
           className="absolute inset-x-0 -top-0 -z-10 transform-gpu overflow-hidden blur-2xl"
           aria-hidden="true"
         >
@@ -24,7 +24,7 @@ export default function SiteBlob() {
               }}
             />
           </div>
-        </div> */}
-      </>
-    );
-  }
+        </div>
+    </>
+  );
+}

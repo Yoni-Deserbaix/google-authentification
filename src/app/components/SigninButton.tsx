@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { MdManageAccounts } from "react-icons/md";
 import { LiaSignOutAltSolid } from "react-icons/lia";
 
-const SignInButton = () => {
+export default function SignInButton() {
   const { data: session } = useSession();
 
   return (
@@ -51,7 +51,7 @@ const SignInButton = () => {
                   <div className="relative h-10 w-10">
                     <Image
                       src={session.user.image}
-                      alt={session.user.name  as string}
+                      alt={session.user.name as string}
                       className="inline-block rounded-full"
                       fill
                     />
@@ -126,6 +126,4 @@ const SignInButton = () => {
       )}
     </>
   );
-};
-
-export default SignInButton;
+}

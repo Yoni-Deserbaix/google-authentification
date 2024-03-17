@@ -24,8 +24,8 @@ export default function SiteHeader() {
         <Link href="/services">Services</Link>
         <Link href="/vision">Vision</Link>
       </div>
-        <ModeToggle />
-        <SigninButton />
+      <ModeToggle />
+      <SigninButton />
     </header>
   );
 }
