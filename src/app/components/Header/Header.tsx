@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "./Toggle";
+import SigninButton from "../SigninButton";
 
 export default function SiteHeader() {
   return (
@@ -22,7 +23,9 @@ export default function SiteHeader() {
         <Link href="/about">About</Link>
         <Link href="/services">Services</Link>
         <Link href="/vision">Vision</Link>
+
       </div>
+      <SigninButton />
       <ModeToggle />
     </header>
   );
