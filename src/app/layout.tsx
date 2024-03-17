@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/Header/ThemeProvider";
 import Blob from "./components/Blob";
 import Providers from "./components/Providers";
+import Appbar from "./components/Appbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
             <Blob />
             <div className="flex-1">{children}</div>
             <Footer />
+            <Appbar />
           </ThemeProvider>
         </Providers>
       </body>
