@@ -6,9 +6,11 @@ export default function Home() {
     <main className="mx-auto max-w-6xl px-6">
       <div className="px-10 pt-10">
         <h1 className="text-4xl font-extrabold">Home Page</h1>
-        <p className="py-16 text-xl">The perfect landing page</p>
+        <p className="pt-16 text-xl w-1/2">
+          The perfect landing page to sign in with your Google account! You can also check out the documentation on the button below!
+        </p>
         <div className="flex flex-row gap-5 pt-10">
-        <SignInButton />
+          <SignInButton />
           <Button>
             <a href="https://next-auth.js.org/" target="bla k">
               Documentation
