@@ -22,7 +22,7 @@ export default function SiteFooter() {
             </div>
           ))}
         </nav>
-        <p className="mt-10 text-center text-sm text-muted-foreground">
+        <p className="pt-6 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Yoni Deserbaix
         </p>
       </div>
