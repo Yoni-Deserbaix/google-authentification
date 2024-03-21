@@ -8,7 +8,11 @@ export default function Home() {
         <h1 className="text-4xl font-extrabold">Home Page</h1>
         <p className="py- text-xl">The perfect landing page</p>
         <SignInButton />
-        <Button>Documentation</Button>
+        <Button>
+          <a href="https://next-auth.js.org/" target="bla k">
+            Documentation
+          </a>
+        </Button>
       </div>
     </main>
   );
