@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import SignInButton from "./components/SigninButton";
 
 export default function Home() {
@@ -6,7 +7,8 @@ export default function Home() {
       <div className="px-10 pt-10">
         <h1 className="text-4xl font-extrabold">Home Page</h1>
         <p className="py- text-xl">The perfect landing page</p>
-        <SignInButton  />
+        <SignInButton />
+        <Button>Documentation</Button>
       </div>
     </main>
   );
