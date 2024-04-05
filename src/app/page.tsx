@@ -11,9 +11,9 @@ export default function Home() {
         </p>
         <div className="flex flex-row gap-5 pt-10">
           <SignInButton />
-          <Button>
+          <Button className="bg-blue-500 text-white hover:text-black">
             <a href="https://next-auth.js.org/" target="bla k">
-              Documentation
+              Next-Auth Documentation
             </a>
           </Button>
         </div>
